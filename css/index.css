@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    height: 100vh;
+    /* Full viewport height */
+    background-image: url("images/background.jpg");
+    /* Replace with your image URL */
+    background-size: cover;
+    /* Scale the image to cover the entire area */
+    background-position: center;
+    /* Center the image */
+   
+}
+
+.parentdiv {
+    display: flex;
+    position: relative;
+    height: 40px;
+}
+
+.social_connects {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(rgb(168, 225, 219), rgb(12, 199, 180));
+}
+
+.envelope {
+
+    width: fit-content;
+}
+
+.mail {
+    margin-top: 0.5%;
+    color: white;
+
+}
+
+.search_txt {
+    margin-left: 40%;
+    border-radius: 5px;
+    height: 20px;
+
+}
+
+.search-icon {
+    padding-left: 5.2%;
+
+}
+
+.follow {
+    padding-left: 54%;
+    margin-right: 2px;
+}
+
+.insta {
+    text-decoration: none;
+}
+
+.customer {
+
+    margin-top: 1%;
+    margin-left: 130px;
+    width: 18%;
+}
+
+.label {
+    color: white;
+    font-size: 16px;
+    font-family: cursive;
+
+}
+
+/* navigation bar second*/
+.navbar {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(rgb(168, 225, 219), rgb(12, 199, 180));
+}
+
+.nav {
+    margin-top: 3%;
+    height: 20px;
+    margin-left: 15%;
+
+}
+
+.menuitems {
+    background-color: rgb(152, 220, 210);
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 30px;
+    border-radius: 8px;
+    color: rgb(118, 3, 105);
+    text-shadow: 1px 2px #f0b9f0;
+    font-family: cursive;
+    transition: background-color 0.7s ease, box-shodow 0.8s ease;
+}
+
+.menuitems:hover {
+    background-color: white;
+}
+
+.parent_main {
+    display: flex;
+    width: 100%;
+    height: 420px;
+
+}
+
+.left_main {
+    width: 50%;
+    height: 403px;
+
+}
+
+.middle_main {
+    height: 100%;
+
+}
+
+/*Enquiry Form*/
+.labelE {
+    color: rgb(1, 97, 90);
+    font-size: 20px;
+    text-shadow: 1px 2px 2px rgb(69, 232, 238);
+}
+
+.right_main {
+
+    display: flex;
+    background-color: white;
+    width: 40%;
+    height: 400px;
+    /* border: 2px solid #e7e1e4;*/
+}
+
+
+.form_div {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    gap: 60px;
+    align-items: center;
+
+    margin-bottom: 7%;
+
+}
+
+h2 {
+    color: rgb(10, 131, 158);
+    font-family: cursive;
+    /*background-color: #e7e1e4;*/
+    padding-left: 40%;
+}
+
+.enquiry {
+    margin-top: -10px;
+    height: 8%;
+    width: 24.5vw;
+    margin-bottom: 7%;
+    /*background-color: #e7e1e4;*/
+}
+
+
+.myfield {
+    border: none;
+    height: 40px;
+    color: rgb(68, 56, 56);
+    font-weight: bold;
+    background-color: #f0f0f0;
+    transition: background-color 0.8s ease, box-shodow 0.8s ease;
+}
+
+.myfield_subject {
+    margin-right: 16px;
+    border: none;
+    height: 40px;
+    color: rgb(68, 56, 56);
+    font-weight: bold;
+    background-color: #f0f0f0;
+    transition: background-color 0.8s ease, box-shodow 0.8s ease;
+
+}
+
+.myfield_subject:hover {
+    outline: none;
+    background-color: #e0e0e0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.mysubmit {
+    background: linear-gradient(rgb(168, 225, 219), rgb(12, 199, 180));
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.mysubmit:hover {
+    background-color: #12010a;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.myfield:hover {
+    outline: none;
+    background-color: #e0e0e0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.mymessage {
+    height: 50px;
+    width: 53%;
+    margin-right: 16px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    color: rgb(68, 56, 56);
+    font-weight: bold;
+
+    transition: background-color 0.8s ease, box-shodow 0.8s ease;
+}
+
+.mymessage:focus {
+    outline: none;
+    background-color: #e0e0e0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+    width: 100%;
+    /* Full width */
+    height: 400px;
+    /* Set height */
+    border: 0;
+    /* No border */
+}
+
+/*offers*/
+.parent_offers {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    gap: 8%;
+}
+
+.div1 {
+    width: 20%;
+    height: 300px;
+    border: 2px solid grey;
+    border-radius: 12px;
+    margin-left: 11%;
+    transition: background-color 0.8s ease, box-shodow 0.8s ease;
+}
+
+.div1:hover,
+.div2:hover,
+.div3:hover,
+.div4:hover,
+.div5:hover,
+.div6:hover {
+    box-shadow: 1px 4px 14px;
+    border: 2px solid black;
+
+}
+
+.div2 {
+    width: 20%;
+    height: 300px;
+    border: 2px solid grey;
+    border-radius: 12px;
+}
+
+.div3 {
+    width: 20%;
+    height: 300px;
+    border: 2px solid grey;
+    border-radius: 12px;
+}
+
+.div4 {
+    width: 20%;
+    height: 300px;
+    border: 2px solid grey;
+    border-radius: 12px;
+    margin-left: 11%;
+    margin-top: 3%;
+}
+
+.div5 {
+    width: 20%;
+    height: 300px;
+    border: 2px solid grey;
+    border-radius: 12px;
+    margin-top: 3%;
+}
+
+.div6 {
+    width: 20%;
+    height: 300px;
+    border: 2px solid grey;
+    border-radius: 12px;
+    margin-top: 3%;
+}
+
+.offers {
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 1%;
+    text-shadow:2px 1px rgb(180, 3, 3);
+    border: 1px solid rgb(232, 232, 214);
+    box-shadow: 6px 4px 10px 4px rgb(139, 139, 136);
+    background: linear-gradient(to right, rgb(171, 207, 253), rgb(237, 195, 82))
+}
+.offers:hover
+{
+    border: 1px solid rgb(180,3,3); 
+    box-shadow: 6px 4px 10px 4px rgb(237, 195, 82);
+    text-shadow:2px 1px rgb(243, 241, 241);
+    color: rgb(243, 131, 71);
+}
+
+.label2 {
+    font-size: 30px;
+    color: rgb(243, 131, 71);
+
+}
