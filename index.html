@@ -11,51 +11,73 @@
     <script type="text/javascript" src="engine1/jquery.js"></script>
 
     <script type="text/javascript" src="engine1/jquery.js"></script>
+    <script>
+        function pop_up_review()
+        {
+            document.getElementById("review-content").style.display="block";
+        }
+        function close_review_pop()
+        {
+            document.getElementById("review-content").style.display="none"; 
+        }
+        </script>
 
     <style>
-      
-        .width
-        {
-            width:1500px;
-            height:300px;
-            border:2px solid red;
-        }
-        .choose {
-            position: relative;
-            margin-top: 5%;
-            height: 300px;
-            border:2px solid grey;
-            border-radius: 6px;
-        }
-        .parent_vid {
-            position: relative;
-            display: flex;
-            margin-top: 1%;
-            height: 350px;
-            width: 100%;
-            
-        }
-
-        .left_vid {
-            height: 350px;
-            width: 50%;
-            border:2px solid grey;
-        }
-
-        .right_vid {
-
-            height: 350px;
-            width: 50%;
-            background-color: rgb(0, 219, 219);
-            background-size: contain;
-        }
-
-        
+     .login
+     { 
+        margin-top:7px;
+        width:8%;
+        margin-left:40%;
+     }
+     .login_btn
+     {
+        font-size: 18px;
+        border-radius: 6px;
+        padding: 2px;
+        width:70%;
+        background-color: #a8e1db;
+        cursor:pointer;
+        border:none;
+        box-shadow: 0 4px 10px rgb(23, 22, 22);
+     }
+     .signup
+     {
+        margin-top:7px;
+        width:8%;
+        margin-left:1%;
+     }
+     .signup_btn
+     {
+        padding:2px;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 6px;
+        width:70%;
+        background-color: #a8e1db; 
+        border:none;
+        box-shadow: 0 4px 10px rgb(23, 22, 22);
+     }
+     .login_btn:hover, .signup_btn:hover
+     {
+        background-color:rgb(255, 246, 246); ;
+        border:2px solid rgb(248, 248, 251);
+        box-shadow: 0 4px 10px rgb(23, 22, 22);
+     }
+       
     </style>
 </head>
 
 <body background="">
-
+    <div class="review-pop" id="review-content">
+        <div class="review-pop-content">
+            <span class="close_review_pop" onclick="close_review_pop()">&times;</span>
+            <div class="review_us_div">Review Us</div>
+            <p class="leave_review">Leave your review for our Services</p>
+            <textarea cols="30" rows="4" class="review_textarea" placeholder="Write a review here..."></textarea>
+            <button class="submit_review">Submit</button>
+        </div>
+    </div>
+    
 
     <div class="parentdiv"> <!--navigation bar-->
         <div class="social_connects">
@@ -72,7 +94,9 @@
             <div class="search-icon">
                 <img src="images/search-icon.png" alt="Search" width="30" height="" onclick="alert('Searching...')">
             </div>
-
+            
+            <div class="login"><button class="login_btn" onclick="login_page()"> Login</button> </div>
+        <div class="signup"><button class="signup_btn">Signup</button> </div>
             <div class="follow"><label class="label">Follow us on ~</label></div>
 
             <div>
@@ -239,8 +263,9 @@
 
     <div class="parent_vid">
         <div class="left_vid">
-
-        </div>
+            <img src="images/review-us.png" alt="" height="350px" width="100%"> 
+            <button class="review-button" onclick="pop_up_review()">Review Us</button>
+            </div>
         <div class="right_vid">
             <iframe style="width:100%; height:100%;" src="https://www.youtube.com/embed/bhHnq82Fec8?si=w8Zt3k16m51n7pZN"
                 title="YouTube video player" frameborder="0"
@@ -250,12 +275,12 @@
 
     </div>
 
-   <div class="width">
+    <div class="width">
 
-   </div>
+    </div>
 
 
-</body>
+
 </body>
 
 </html>
