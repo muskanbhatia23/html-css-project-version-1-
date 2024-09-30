@@ -37,21 +37,43 @@
     </script>
 
     <style>
+        .footer_parent {
+            display: flex;
+            justify-content: center;
+            gap: 5%;
+            height: 600px;
+            width: 100%;
+            background:linear-gradient(white, #c36666);
 
-        .latest_update{
-            height:5%;
-            width:100%;
+        }
+
+        .foot1,
+        .foot2,
+        .foot3,
+        .foot4,
+        .foot5 {
+            height: 500px;
+            width: 15%;
+            background:linear-gradient(white, #c36666);
+        }
+
+        .latest_update {
+            height: 5%;
+            width: 100%;
             background-color: rgb(227, 215, 226);
             border: 1px solid grey;
         }
-       .latest_updates
-       {
-        color:rgb(118, 3, 105);
-        font-style: italic;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 22px;
-       }
-     
+
+        .latest_updates {
+            color: rgb(118, 3, 105);
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 22px;
+
+            .data_content {
+                text-align: left;
+            }
+        }
     </style>
 </head>
 
@@ -64,7 +86,7 @@
             <!--name-->
             <div class="name"> <label for="email" class="emailpwd"> Email-Id</label></div>
             <div class="name_input"> <input placeholder="name" type="text" class="emailpwd-input"></div>
-           <!--e-mail-->
+            <!--e-mail-->
             <div class="email"> <label for="email" class="emailpwd"> Email-Id</label></div>
             <div> <input placeholder="example@gmail.com" type="text" class="emailpwd-input"></div>
             <!--passsword-->
@@ -72,21 +94,23 @@
             <div class="pwd_input"><input type="password" placeholder="password" class="emailpwd-input"></div>
             <!--gender-->
             <div class="gender">
-                <input type="radio" name="gender" >
+                <input type="radio" name="gender">
                 <label class="emailpwd">Male </label>
-                <input type="radio" name="gender" >
+                <input type="radio" name="gender">
                 <label class="emailpwd">Female </label>
-                <input type="radio" name="gender" >
+                <input type="radio" name="gender">
                 <label class="emailpwd">Other </label>
             </div>
-    
+
             <!--Login and Signup Buttons-->
             <div class="buttons-parent">
-            <div class="signup-pop-btn"><button class="signup-pop-btn-content" onclick="signup_pop()"> Signup</button></div>
-            <div><label class="emailpwd">If Already Have an Account </label></div>
-            <div class="login-pop-btn"><button class="login-pop-btn-content" onclick="login_pop(), close_signup_pop()"> Login</button></div>
+                <div class="signup-pop-btn"><button class="signup-pop-btn-content" onclick="signup_pop()">
+                        Signup</button></div>
+                <div><label class="emailpwd">If Already Have an Account </label></div>
+                <div class="login-pop-btn"><button class="login-pop-btn-content"
+                        onclick="login_pop(), close_signup_pop()"> Login</button></div>
             </div>
-            
+
         </div>
     </div>
 
@@ -169,9 +193,11 @@
     </div>
     </div>
     <div class="latest_update">
-        <marquee width="100%" scrollamount="7" >
-        <label class="latest_updates">Latest Offers upto 50% off &nbsp;&nbsp; &nbsp;&nbsp; ~Born Baby dresses upto 70% off</label> 
-        </marquee> </div>
+        <marquee width="100%" scrollamount="7">
+            <label class="latest_updates">Latest Offers upto 50% off &nbsp;&nbsp; &nbsp;&nbsp; ~Born Baby dresses upto
+                70% off</label>
+        </marquee>
+    </div>
 
 
 
@@ -303,6 +329,10 @@
             <img src="images/review-us.png" alt="" height="350px" width="100%">
             <button class="review-button" onclick="pop_up_review()">Review Us</button>
         </div>
+        <div class="middle_vid">
+            <img src="images/review-us.png" alt="" height="350px" width="100%">
+            <button class="review-button" onclick="pop_up_review()">Review Us</button>
+        </div>
         <div class="right_vid">
             <iframe style="width:100%; height:100%;" src="https://www.youtube.com/embed/bhHnq82Fec8?si=w8Zt3k16m51n7pZN"
                 title="YouTube video player" frameborder="0"
@@ -313,13 +343,107 @@
     </div>
 
 
+    <footer>
+        <div class="footer_parent">
+            <div class="foot1">
+                <p><h5>NOTE</h5>
+                    After placing oreder all 
+                    order related details are
+                    sended to your email and
+                    on whatsapp number you
+                    provided for parcel delivery.
+                    (📌PLS CHECK SPAM FOLDER IN 
+                    EMAIL ALSO)
+                </p>
+            </div>
+            <div class="foot2">
+                    <p><h5>SUPPORT</h5>
+                       <a href="#" style="text-decoration:none;"> Contact</a><br>
+                        <a href="#" style="text-decoration:none;">FAQ</a><br>
+                        <a href="#" style="text-decoration:none;">Track Order</a>
+                    </p>
 
-    <div class="width">
-
-    </div>
-
-
+            </div>
+            <div class="foot3">
+                <p><h5>POLICIES</h5>
+                     No Exchange & Return
+                     Shipping & Delivery
+                     Terms & Conditions
+                     Privacy Policy
+                </p>
+            </div>
+            <div class="foot4">
+                <p>
+                    <h5>Contact</h5>
+                    contact@gmail.com
+                </p>
+            </div>
+            <div class="foot5">
+                <p><h5>INFORMATION</h5>
+                    D-1, Jail Road,Fateh Nagar,
+                    opposite Gianis Ice cream,
+                    Near Metro Station
+                    Tilak Nagar, Delhi, 110018
+                    All Disputes are subjected
+                    to Delhi
+                    jurisdiction only.
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
 </html>
+
+<!--<div class="footer_parent">
+    <table border="1" padding="20px">
+        <tr>
+            <td >NOTE </td>
+            <td>SUPPORT</td>
+            <td>POLICIES</td>
+            <td>CUSTOMER CARE</td>
+            <td>INFORMATION</td>
+        </tr>
+        <tr class="data-content">
+            <td rowspan="4">
+<pre>
+After placing oreder all 
+order related details are
+sended to your email and
+on whatsapp number you
+provided for parcel delivery.
+(📌PLS CHECK SPAM FOLDER IN 
+EMAIL ALSO)</pre>
+            </td>
+            <td>
+                <pre>
+Contact
+FAQ
+Track Order</pre>
+           </td>
+            <td>
+                <pre>
+No Exchange & Return
+Shipping & Delivery
+Terms & Conditions
+Privacy Policy
+                </pre>
+            </td>
+            <td>
+                Email: care@conatct.in
+            </td>
+            <td>
+                <pre>
+D-1, Jail Road,Fateh Nagar, opposite
+Gianis Ice cream, Near Metro Station
+Tilak Nagar, Delhi, 110018
+All Disputes are subjected to Delhi
+jurisdiction only.
+          </pre>
+            </td>
+        </tr>
+    </table>
+
+</div>
+</footer>

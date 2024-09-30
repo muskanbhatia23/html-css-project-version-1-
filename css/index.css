@@ -78,7 +78,7 @@ body {
     {
         position: absolute;
         height:12%;
-        width:25%;
+        width:30%;
         border-radius: 4px;
         font-size: 18px;
         top:85%;
@@ -100,7 +100,7 @@ body {
         cursor: pointer;
         position: relative;
         height:10%;
-        width:20%;
+        width:25%;
         border-radius: 4px;
         font-size: 18px;
         top:-20%;
@@ -127,7 +127,7 @@ body {
     display: flex;
     height: 40px;
     width: 100%;
-    background-color:rgb(12, 199, 180);
+    background-color:rgb(102, 180, 171);
 }
 
 .envelope {
@@ -160,12 +160,12 @@ body {
 .customer {
 
     margin-top: 1%;
-    margin-left: 130px;
+    margin-left: 13%;
     width: 18%;
 }
 
 .label {
-    color: white;
+   
     font-size: 16px;
     font-family:'Times New Roman', Times, serif;
 
@@ -176,24 +176,26 @@ body {
     display: flex;
     height: 80px;
     width: 100%;
-    background: linear-gradient(rgb(207, 191, 206), rgb(12, 199, 180));
+   
 }
 
 .nav {
     margin-top: 3.5%;
+    width:100%;
     height: 20px;
-    margin-left: 15%;
+    margin-left: 10%;
     
 
 }
 
 .menuitems {
+    
     text-decoration: none;
-    font-size: 22px;
-    margin-left: 30px;
+    font-size: 26px;
+    margin-right: 5%;
     border-radius: 8px;
     color: rgb(118, 3, 105);
-    text-shadow: 1px 2px #f0b9f0;
+
     font-family:'Times New Roman', Times, serif;
     transition: background-color 0.7s ease, box-shodow 0.8s ease;
 }
@@ -458,14 +460,20 @@ iframe {
 .left_vid {
     display: inline;
     height: 350px;
-    width: 50%;
+    width: 30%;
+    border: 2px solid grey;
+}
+._vid {
+    display: inline;
+    height: 350px;
+    width: 30%;
     border: 2px solid grey;
 }
 
 .right_vid {
 
     height: 350px;
-    width: 50%;
+    width: 35%;
     background-color: rgb(0, 219, 219);
     background-size: contain;
 }
