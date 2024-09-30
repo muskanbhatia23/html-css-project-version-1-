@@ -27,54 +27,69 @@
             document.getElementById("login-pop").style.display = "none";
         }
     </script>
+    <script>
+        function signup_pop() {
+            document.getElementById("signup").style.display = "block";
+        }
+        function close_signup_pop() {
+            document.getElementById("signup").style.display = "none";
+        }
+    </script>
 
     <style>
-       
-        .login {
-            margin-top: 7px;
-            width: 8%;
-            margin-left: 40%;
-        }
 
-        .login_btn {
-            font-size: 18px;
-            border-radius: 6px;
-            padding: 2px;
-            width: 70%;
-            background-color: #a8e1db;
-            cursor: pointer;
-            border: none;
-            box-shadow: 0 4px 10px rgb(23, 22, 22);
+        .latest_update{
+            height:5%;
+            width:100%;
+            background-color: rgb(227, 215, 226);
+            border: 1px solid grey;
         }
-
-        .signup {
-            margin-top: 7px;
-            width: 8%;
-            margin-left: 1%;
-        }
-
-        .signup_btn {
-            padding: 2px;
-            cursor: pointer;
-            font-size: 18px;
-            border-radius: 6px;
-            width: 70%;
-            background-color: #a8e1db;
-            border: none;
-            box-shadow: 0 4px 10px rgb(23, 22, 22);
-        }
-
-        .login_btn:hover,
-        .signup_btn:hover {
-            background-color: rgb(255, 246, 246);
-            ;
-            border: 2px solid rgb(248, 248, 251);
-            box-shadow: 0 4px 10px rgb(23, 22, 22);
-        }
+       .latest_updates
+       {
+        color:rgb(118, 3, 105);
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 22px;
+       }
+     
     </style>
 </head>
 
 <body background="">
+    <div class="signup-pop" id="signup">
+        <div class="signup-pop-content">
+            <div class="reg_div"><label class="reg">Registration</label></div>
+            <!--close-->
+            <span class="close_signup_pop" onclick="close_signup_pop()">&times;</span>
+            <!--name-->
+            <div class="name"> <label for="email" class="emailpwd"> Email-Id</label></div>
+            <div class="name_input"> <input placeholder="name" type="text" class="emailpwd-input"></div>
+           <!--e-mail-->
+            <div class="email"> <label for="email" class="emailpwd"> Email-Id</label></div>
+            <div> <input placeholder="example@gmail.com" type="text" class="emailpwd-input"></div>
+            <!--passsword-->
+            <div class="email_text"><label for="pwd" class="emailpwd">Password</label></div>
+            <div class="pwd_input"><input type="password" placeholder="password" class="emailpwd-input"></div>
+            <!--gender-->
+            <div class="gender">
+                <input type="radio" name="gender" >
+                <label class="emailpwd">Male </label>
+                <input type="radio" name="gender" >
+                <label class="emailpwd">Female </label>
+                <input type="radio" name="gender" >
+                <label class="emailpwd">Other </label>
+            </div>
+    
+            <!--Login and Signup Buttons-->
+            <div class="buttons-parent">
+            <div class="signup-pop-btn"><button class="signup-pop-btn-content" onclick="signup_pop()"> Signup</button></div>
+            <div><label class="emailpwd">If Already Have an Account </label></div>
+            <div class="login-pop-btn"><button class="login-pop-btn-content" onclick="login_pop(), close_signup_pop()"> Login</button></div>
+            </div>
+            
+        </div>
+    </div>
+
     <div class="login-pop" id="login-pop">
         <div class="login-pop-content">
             <span class="close_login_pop" onclick="close_login_pop()">&times;</span>
@@ -82,10 +97,10 @@
             <div> <input placeholder="example@gmail.com" type="text" class="emailpwd-input"></div>
             <div class="email_text"><label for="pwd" class="emailpwd">Password</label></div>
             <div class="pwd_input"><input type="password" placeholder="password" class="emailpwd-input"></div>
-            <div class="login-pop-btn"><button class="login-pop-btn-content" onclick="login_page()"> Login</button>
-            </div>
+            <div class="login-pop-btn"><button class="login-pop-btn-content" onclick="login_pop()"> Login</button></div>
         </div>
     </div>
+
     <div class="review-pop" id="review-content">
         <div class="review-pop-content">
             <span class="close_review_pop" onclick="close_review_pop()">&times;</span>
@@ -114,7 +129,7 @@
             </div>
 
             <div class="login"><button class="login_btn" onclick="login_pop()"> Login</button> </div>
-            <div class="signup"><button class="signup_btn">Signup</button> </div>
+            <div class="signup"><button class="signup_btn" onclick="signup_pop()">Signup</button> </div>
             <div class="follow"><label class="label">Follow us on ~</label></div>
 
             <div>
@@ -153,6 +168,10 @@
         </div>
     </div>
     </div>
+    <div class="latest_update">
+        <marquee width="100%" scrollamount="7" >
+        <label class="latest_updates">Latest Offers upto 50% off &nbsp;&nbsp; &nbsp;&nbsp; ~Born Baby dresses upto 70% off</label> 
+        </marquee> </div>
 
 
 
